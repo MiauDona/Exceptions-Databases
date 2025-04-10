@@ -11,7 +11,7 @@ public class Test {
 
         try {
             System.out.println("---------------------------Empieza");
-            con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/miaudonatest", "admindona", "donanfer6");
+            con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/miaudonatest", "admindona", "miaudona");
 
             preparedStatement = con.prepareStatement("select id, nombre from test1");
 
