@@ -6,11 +6,7 @@ public class PatternTests {
 
     // Extracted method to detect if the char introduced is a number
     private static boolean isANumber(char c) {
-        if ((c >= '0' && c <= '9')) {
-            return true;
-        }
-
-        return false;
+        return c >= '0' && c <= '9';
     }
 
     // Extracted method to count how many digits are in the pattern
