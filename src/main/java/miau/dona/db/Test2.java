@@ -9,7 +9,6 @@ public class Test2 {
 
         try {
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/miaudonatest", "admindona", "miaudona");
-            stmt = con.prepareStatement("insert into test1 (nombre) values(?)");
 
             insertMiaus(con, ultimoMiau(con));
             mostrarMiaus(con);
@@ -91,7 +90,6 @@ public class Test2 {
                 }
             }
         }
-
 
         rs.close();
         stmt.close();
